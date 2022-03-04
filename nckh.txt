@@ -1,0 +1,15 @@
+npm init -y
+npx create-react-app client
+npm i concurrently
+npm i json-server
+db.json
+json-server --watch db.json
+cd client 
+npm i react-chartjs-2
+npm i chart.js 
+npm i react-router-dom
+npm i axios
+"porxy":"http://localhost:5000"
+"client": "cd client &&npm start",
+"server": "json-server --watch db.json --port 5000",
+"dev": "concurrently \"npm run server\" \"npm run client\""
